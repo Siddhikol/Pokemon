@@ -1,5 +1,15 @@
 {
+  "name": "pokedex",
+  "version": "1.0.0",
+  "scripts": {
+    "start" : "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend":"cd backend && node server.js",
+    "frontend":"cd frontend && npm run dev"
+  },
   "dependencies": {
     "vite": "^4.4.7"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
   }
 }
