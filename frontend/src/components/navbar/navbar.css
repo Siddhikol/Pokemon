@@ -1,0 +1,12 @@
+.navbarMainContainer {
+    height: 64px;
+    padding: 5px 15px;
+    border-bottom: 2px solid gray;
+}
+
+.navbarMainContainer .logoContainer{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    border: 2px solid gray;
+}

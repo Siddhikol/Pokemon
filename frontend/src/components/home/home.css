@@ -1,0 +1,7 @@
+.homeMainContainer {
+    min-height: calc(100vh - 64px);
+}
+
+.homeMainContainer .asd {
+    height: 120vh;
+}

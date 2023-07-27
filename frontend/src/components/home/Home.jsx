@@ -1,7 +1,11 @@
 import React from 'react'
+import Searchbar from '../searchbar/Searchbar'
+import './home.css'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div className="homeMainContainer">
+      <Searchbar />
+    </div>
   )
 }
