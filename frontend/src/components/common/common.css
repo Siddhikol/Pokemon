@@ -3,11 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     overflow: overlay;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+    color: gray;
 }
 
 body {
     /* height: 100%; */
-    background-image: linear-gradient(rgb(25, 25, 25), rgb(15, 15, 15));
+    /* background-color: rgb(15, 15, 15); */
+    background-image: linear-gradient(rgb(3, 18, 25),rgb(52, 5, 73) );
 }
 
 *::-webkit-scrollbar {
@@ -65,4 +69,105 @@ body {
 .grid24 {
     display: grid;
     grid-template-columns: repeat(24, minmax(auto, 1fr));
+}
+
+button:active,
+.button:active {
+    scale: 0.9;
+}
+
+.gColSpan1 {
+    grid-column: span 1;
+}
+
+.gColSpan2 {
+    grid-column: span 2;
+}
+
+.gColSpan3 {
+    grid-column: span 3;
+}
+
+.gColSpan4 {
+    grid-column: span 4;
+}
+
+.gColSpan5 {
+    grid-column: span 5;
+}
+
+.gColSpan6 {
+    grid-column: span 6;
+}
+
+.gColSpan7 {
+    grid-column: span 7;
+}
+
+.gColSpan8 {
+    grid-column: span 8;
+}
+
+.gColSpan9 {
+    grid-column: span 9;
+}
+
+.gColSpan10 {
+    grid-column: span 10;
+}
+
+.gColSpan11 {
+    grid-column: span 11;
+}
+
+.gColSpan12 {
+    grid-column: span 12;
+}
+
+.gColSpan13 {
+    grid-column: span 13;
+}
+
+.gColSpan14 {
+    grid-column: span 14;
+}
+
+.gColSpan15 {
+    grid-column: span 15;
+}
+
+.gColSpan16 {
+    grid-column: span 16;
+}
+
+.gColSpan17 {
+    grid-column: span 17;
+}
+
+.gColSpan18 {
+    grid-column: span 18;
+}
+
+.gColSpan19 {
+    grid-column: span 19;
+}
+
+.gColSpan20 {
+    grid-column: span 20;
+}
+
+.gColSpan21 {
+    grid-column: span 21;
+}
+
+.gColSpan22 {
+    grid-column: span 22;
+}
+
+.gColSpan23 {
+    grid-column: span 23;
+}
+
+.gColSpan24 {
+    grid-column: span 24;
 }

@@ -1,0 +1,36 @@
+.pokemonGridMainContainer {
+    padding: 20px;
+    grid-gap: 10px;
+}
+.pokemonGridMainContainer .pokemonTile {
+    aspect-ratio: 2/1;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #00000050;
+    /* backdrop-filter: blur(5px); */
+    position: relative;
+}
+
+.pokemonGridMainContainer .pokemonTile .pokeId,
+.pokemonGridMainContainer .pokemonTile .pokemonName {
+    font-size: 22px;
+    padding: 0 10px;
+    text-align: right;
+    text-transform: capitalize;
+    color: rgb(247, 215, 255);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    z-index: 50;
+}
+
+.pokemonGridMainContainer .pokemonTile .pokeId {
+    color: gray;
+    font-size: 15px;
+}
+
+.pokemonGridMainContainer .pokemonTile img {
+    height: 100%;
+    aspect-ratio: 1/1;
+    z-index: 40;
+    align-self: flex-start;
+}

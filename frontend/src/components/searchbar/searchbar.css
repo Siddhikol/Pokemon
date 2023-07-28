@@ -1,15 +1,17 @@
 .searchbarMainContainer {
-    /* height: 64px; */
-    padding: 10px 20px;
-    /* border: 2px solid gray; */
+    height: 64px;
+    position: relative;
+    overflow: visible;
+    z-index: 10000;
+    /* padding: 10px 20px; */
 }
 
 .searchbarMainContainer form {
-    min-height: 64px;
+    height: 100%;
+    padding: 10px 0;
 }
 
-.searchbarMainContainer form .searchText {
-    /* height: 100%; */
+.searchbarMainContainer .searchText {
     width: 50vw;
     border-radius: 44px 0 0 44px;
     outline: none;
@@ -18,12 +20,19 @@
     padding: 10px 20px;
     background-color: transparent;
     color: gray;
-    font-size: 3vmin;
+    font-size: 21px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    height: 44px;
+    text-transform: capitalize;
 }
 
-.searchbarMainContainer form .searchButton {
+.searchbarMainContainer.active .searchText {
+    border-radius: 22px 0 0 0;
+    border-bottom: none;
+}
+
+.searchbarMainContainer .searchButton {
     height: 44px;
     aspect-ratio: 1/1;
     border-radius: 0 100% 100% 0;
@@ -31,4 +40,46 @@
     outline: none;
     background-color: transparent;
     border: 2px solid gray;
+    background-color: gray;
+}
+
+.searchbarMainContainer.active .searchButton {
+    border-radius: 0 22px 0 0;
+}
+
+.searchbarMainContainer .searchDropDownContainer {
+    border-radius: 0 0 20px 20px;
+    width: calc(50vw + 44px);
+    max-height: 40vh;
+    position: absolute;
+    /* border: 2px solid gray; */
+    margin: 54px 0 0 50%;
+    transform: translate(calc(-50%));
+    height: 0;
+    opacity: 0;
+}
+
+.searchbarMainContainer.active .searchDropDownContainer {
+    height: max-content;
+    opacity: 1;
+    border: 2px solid gray;
+    background-color: rgb(15, 15, 15);;
+}
+
+.searchbarMainContainer .searchDropDownContainer .searchResults {
+    border-bottom: 2px solid gray;
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+    transition: 0s;
+    padding: 10px;
+}
+
+.searchbarMainContainer .searchDropDownContainer .searchResults:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.searchbarMainContainer .searchDropDownContainer .searchResults:hover {
+    background-color: gray;
+    color: black;
 }
